@@ -1,24 +1,88 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Политика конфиденциальности (Privacy Policy)</title>
-    <style>body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #333; }</style>
+    <title>Privacy Policy / Політика конфіденційності</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #333; }
+        .lang-switcher { margin-bottom: 30px; text-align: center; }
+        .lang-button { 
+            background-color: #f0f0f0; border: 1px solid #ccc; padding: 8px 16px; 
+            margin: 0 5px; cursor: pointer; border-radius: 4px; font-weight: bold;
+        }
+        .lang-button:hover { background-color: #e0e0e0; }
+        .lang-button.active { background-color: #007bff; color: white; border-color: #0056b3; }
+        .content { display: none; }
+        .content.active { display: block; }
+    </style>
 </head>
 <body>
-    <h1>Политика конфиденциальности (Privacy Policy)</h1>
-    <p>Последнее обновление: 2024 год</p>
-    
-    <h2>1. Какую информацию мы собираем</h2>
-    <p>Наше приложение (AI Numerologist Bot) взаимодействует с Instagram Graph API. При использовании бота мы получаем доступ к следующей информации, предоставляемой платформой Meta: ID пользователя Instagram (Instagram User ID), имя пользователя (Username) и текст отправленных боту сообщений (содержащих, например, дату рождения).</p>
 
-    <h2>2. Как мы используем информацию</h2>
-    <p>Мы используем собранные данные (в частности, дату рождения) исключительно для: генерации персонального ответа (нумерологического расчета) с помощью нейросетей (Google Gemini); обеспечения обратной связи через сообщения в Instagram Direct.</p>
+    <!-- Переключатель языков -->
+    <div class="lang-switcher">
+        <button class="lang-button active" onclick="switchLanguage('uk', this)">Українська</button>
+        <button class="lang-button" onclick="switchLanguage('en', this)">English</button>
+        <button class="lang-button" onclick="switchLanguage('ru', this)">Русский</button>
+    </div>
 
-    <h2>3. Защита и передача данных</h2>
-    <p>Мы не продаем, не передаем и не раскрываем ваши персональные данные третьим лицам. Исключение составляет техническая передача текста сообщений в API Google (Gemini) для генерации текстового ответа, после чего ответ возвращается обратно. Google API обязуется не использовать эти данные для обучения публичных моделей.</p>
+    <!-- Текст: Украинский -->
+    <div id="uk" class="content active">
+        <h1>Політика конфіденційності (Privacy Policy)</h1>
+        <p>Останнє оновлення: 2026 рік</p>
+        <h2>1. Яку інформацію ми збираємо</h2>
+        <p>Наш додаток (AI Numerologist Bot) взаємодіє з Instagram Graph API. Під час використання бота ми отримуємо доступ до наступної інформації, наданої платформою Meta: ID користувача Instagram (Instagram User ID), ім'я користувача (Username) та текст надісланих боту повідомлень (які містять, наприклад, дату народження).</p>
+        <h2>2. Як ми використовуємо інформацію</h2>
+        <p>Ми використовуємо зібрані дані (зокрема, дату народження) виключно для: генерації персоналізованої відповіді (нумерологічного розрахунку) за допомогою нейромереж (Google Gemini); забезпечення зворотного зв'язку через повідомлення в Instagram Direct.</p>
+        <h2>3. Захист та передача даних</h2>
+        <p>Ми не продаємо, не передаємо і не розкриваємо ваші персональні дані третім особам. Винятком є технічна передача тексту повідомлень в API Google (Gemini) для генерації текстової відповіді, після чого відповідь повертається назад. Google API зобов'язується не використовувати ці дані для навчання публічних моделей.</p>
+        <h2>4. Запит на видалення даних</h2>
+        <p>Якщо ви хочете, щоб ми видалили всю історію вашого листування з ботом і ваш Instagram ID з нашої технічної бази, напишіть нам в особисті повідомлення акаунта: @ai_numerologist.</p>
+    </div>
 
-    <h2>4. Запрос на удаление данных</h2>
-    <p>Если вы хотите, чтобы мы удалили всю историю вашей переписки с ботом и ваш Instagram ID из нашей технической базы, напишите нам в личные сообщения аккаунта: @ai_numerologist.</p>
+    <!-- Текст: Английский -->
+    <div id="en" class="content">
+        <h1>Privacy Policy</h1>
+        <p>Last updated: 2026</p>
+        <h2>1. Information We Collect</h2>
+        <p>Our application (AI Numerologist Bot) interacts with the Instagram Graph API. By using our bot, we access the following information provided by the Meta platform: Instagram User ID, Username, and the text of messages sent to the bot (which may contain, for example, your date of birth).</p>
+        <h2>2. How We Use Information</h2>
+        <p>We use the collected data (specifically, the date of birth) solely for: generating a personalized response (numerological calculation) using neural networks (Google Gemini); providing feedback via Instagram Direct messages.</p>
+        <h2>3. Data Protection and Sharing</h2>
+        <p>We do not sell, share, or disclose your personal data to third parties. The exception is the technical transmission of message texts to the Google API (Gemini) to generate a text response, after which the response is returned. Google API commits not to use this data for training public models.</p>
+        <h2>4. Data Deletion Request</h2>
+        <p>If you would like us to delete your entire chat history with the bot and your Instagram ID from our technical database, please write to us via direct messages at our account: @ai_numerologist.</p>
+    </div>
+
+    <!-- Текст: Русский -->
+    <div id="ru" class="content">
+        <h1>Политика конфиденциальности (Privacy Policy)</h1>
+        <p>Последнее обновление: 2026 год</p>
+        <h2>1. Какую информацию мы собираем</h2>
+        <p>Наше приложение (AI Numerologist Bot) взаимодействует с Instagram Graph API. При использовании бота мы получаем доступ к следующей информации, предоставляемой платформой Meta: ID пользователя Instagram (Instagram User ID), имя пользователя (Username) и текст отправленных боту сообщений (содержащих, например, дату рождения).</p>
+        <h2>2. Как мы используем информацию</h2>
+        <p>Мы используем собранные данные (в частности, дату рождения) исключительно для: генерации персонального ответа (нумерологического расчета) с помощью нейросетей (Google Gemini); обеспечения обратной связи через сообщения в Instagram Direct.</p>
+        <h2>3. Защита и передача данных</h2>
+        <p>Мы не продаем, не передаем и не раскрываем ваши персональные данные третьим лицам. Исключение составляет техническая передача текста сообщений в API Google (Gemini) для генерации текстового ответа, после чего ответ возвращается обратно. Google API обязуется не использовать эти данные для обучения публичных моделей.</p>
+        <h2>4. Запрос на удаление данных</h2>
+        <p>Если вы хотите, чтобы мы удалили всю историю вашей переписки с ботом и ваш Instagram ID из нашей технической базы, напишите нам в личные сообщения аккаунта: @ai_numerologist.</p>
+    </div>
+
+    <!-- Скрипт-переключатель -->
+    <script>
+        function switchLanguage(langId, btnElement) {
+            // Скрываем все тексты
+            document.querySelectorAll('.content').forEach(function(el) {
+                el.classList.remove('active');
+            });
+            // Снимаем синий цвет (активный статус) со всех кнопок
+            document.querySelectorAll('.lang-button').forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+
+            // Показываем только выбранный текст и красим кнопку
+            document.getElementById(langId).classList.add('active');
+            btnElement.classList.add('active');
+        }
+    </script>
 </body>
 </html>
